@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Marketing - Агентство интернет-маркетинга</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#1D4ED8', // A strong blue
+              secondary: '#9333EA', // A vibrant purple
+              accent: '#F59E0B', // A warm amber/orange
+              neutral: '#1F2937', // A dark gray
+            }
+          }
+        }
+      }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary">TheOne</a>
+            <ul class="hidden md:flex items-center space-x-6">
+                <li><a href="#services" class="text-gray-600 hover:text-primary transition">Услуги</a></li>
+                <li><a href="#portfolio" class="text-gray-600 hover:text-primary transition">Портфолио</a></li>
+                <li><a href="#about" class="text-gray-600 hover:text-primary transition">О нас</a></li>
+                <li><a href="#testimonials" class="text-gray-600 hover:text-primary transition">Отзывы</a></li>
+                <li><a href="#contact" class="bg-primary text-white px-4 py-2 rounded-full hover:bg-blue-700 transition">Связаться с нами</a></li>
+            </ul>
+            <button id="mobile-menu-button" class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-primary"></i>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="hidden md:hidden px-6 pt-2 pb-4">
+            <a href="#services" class="block py-2 text-gray-600 hover:text-primary">Услуги</a>
+            <a href="#portfolio" class="block py-2 text-gray-600 hover:text-primary">Портфолио</a>
+            <a href="#about" class="block py-2 text-gray-600 hover:text-primary">О нас</a>
+            <a href="#testimonials" class="block py-2 text-gray-600 hover:text-primary">Отзывы</a>
+            <a href="#contact" class="block mt-2 bg-primary text-white text-center px-4 py-2 rounded-full hover:bg-blue-700">Связаться с нами</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="bg-neutral text-white py-20">
+            <div class="container mx-auto px-6 text-center">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4">Усильте цифровое присутствие вашего бренда</h1>
+                <p class="text-lg md:text-xl text-gray-300 mb-8 max-w-3xl mx-auto">Мы — агентство цифрового маркетинга, ориентированное на результат. Специализируемся на SEO, PPC и контент-стратегии, чтобы помочь вам достичь звёздного роста.</p>
+                <a href="#contact" class="bg-accent text-neutral font-bold py-3 px-8 rounded-full hover:bg-amber-400 transition text-lg">Получить бесплатную консультацию</a>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-neutral mb-2">Наши ключевые услуги</h2>
+                <p class="text-center text-gray-500 mb-12">Индивидуальные стратегии для повышения вашей онлайн-видимости и увеличения конверсий.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                        <i class="fas fa-search-dollar text-4xl text-primary mb-4"></i>
+                        <h3 class="text-xl font-bold text-neutral mb-2">SEO-оптимизация</h3>
+                        <p class="text-gray-600">Занимайте более высокие позиции в поисковых системах и привлекайте органический трафик с помощью наших проверенных SEO-методик.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                        <i class="fas fa-bullhorn text-4xl text-secondary mb-4"></i>
+                        <h3 class="text-xl font-bold text-neutral mb-2">PPC-кампании</h3>
+                        <p class="text-gray-600">Максимизируйте рентабельность инвестиций с помощью целевых PPC-кампаний в Google Ads и социальных сетях.</p>
+                    </div>
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-lg text-center hover:shadow-xl transition">
+                        <i class="fas fa-feather-alt text-4xl text-accent mb-4"></i>
+                        <h3 class="text-xl font-bold text-neutral mb-2">Контент-маркетинг</h3>
+                        <p class="text-gray-600">Вовлекайте свою аудиторию с помощью убедительного контента, который укрепляет авторитет и лояльность к бренду.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <hr/>
+
+        <section id="portfolio" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-neutral mb-12">Наши истории успеха</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
+                        <img src="Basliq.JPG" alt="Проект 1" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-neutral mb-2">SEO для E-commerce</h3>
+                            <p class="text-gray-600 mb-4">Увеличили органический трафик на 150% за 6 месяцев для ведущего интернет-магазина.</p>
+                            <a href="#" class="text-primary font-semibold hover:underline">Смотреть кейс &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
+                        <img src="Bas.jpg" alt="Проект 2" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-neutral mb-2">PPC-кампания для SaaS</h3>
+                            <p class="text-gray-600 mb-4">Достигли 3-кратного возврата инвестиций в рекламу при запуске нового B2B-продукта.</p>
+                            <a href="#" class="text-primary font-semibold hover:underline">Смотреть кейс &rarr;</a>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
+                        <img src="Basliq.JPG" alt="Проект 3" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-neutral mb-2">Контент-стратегия для стартапа</h3>
+                            <p class="text-gray-600 mb-4">Увеличили аудиторию блога с 0 до 50 000 посетителей в месяц за первый год.</p>
+                            <a href="#" class="text-primary font-semibold hover:underline">Смотреть кейс &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2">
+                    <img src="Bas.jpg" alt="Наша команда" class="rounded-lg shadow-xl">
+                </div>
+                <div class="md:w-1/2 md:pl-12 mt-8 md:mt-0">
+                    <h2 class="text-3xl font-bold text-neutral mb-4">Мы — архитекторы цифрового роста</h2>
+                    <p class="text-gray-600 mb-4">TheOne было основано на принципе, что каждый бизнес заслуживает шанса засиять в интернете. Наша команда увлеченных экспертов объединяет многолетний опыт в цифровой стратегии, аналитике данных и креативном маркетинге для достижения исключительных результатов.</p>
+                    <p class="text-gray-600">Мы верим в построение партнерских отношений, а не просто в списки клиентов. Ваш успех — это наш успех, и мы стремимся понять ваши уникальные цели, чтобы разработать индивидуальную и эффективную стратегию.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+        
+        <section id="testimonials" class="py-20 bg-secondary text-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center mb-12">Что говорят наши клиенты</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                    <div class="bg-purple-800 p-6 rounded-lg shadow-lg">
+                        <p class="mb-4 italic">"Работа со TheOne изменила правила игры. Их SEO-стратегия вывела нас на новый уровень, и у нас никогда не было столько лидов."</p>
+                        <p class="font-bold">- Анна Иванова, CEO TechCorp</p>
+                    </div>
+                    <div class="bg-purple-800 p-6 rounded-lg shadow-lg">
+                        <p class="mb-4 italic">"Креативность и внимание к деталям команды в наших PPC-кампаниях были выдающимися. Очень рекомендую!"</p>
+                        <p class="font-bold">- Иван Петров, основатель Innovate.io</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <hr/>
+
+        <section id="contact" class="py-20 bg-gray-100">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-center text-neutral mb-2">Готовы развивать свой бизнес?</h2>
+                <p class="text-center text-gray-500 mb-12">Заполните форму ниже, и давайте обсудим, как мы можем помочь вам достичь ваших целей.</p>
+                <div class="max-w-xl mx-auto bg-white p-8 rounded-lg shadow-lg">
+                    <form action="#" method="POST">
+                        <div class="mb-4">
+                            <label for="name" class="block text-gray-700 font-bold mb-2">Имя</label>
+                            <input type="text" id="name" name="name" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="email" class="block text-gray-700 font-bold mb-2">Электронная почта</label>
+                            <input type="email" id="email" name="email" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="block text-gray-700 font-bold mb-2">Сообщение</label>
+                            <textarea id="message" name="message" rows="4" class="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="w-full bg-primary text-white font-bold py-3 px-6 rounded-lg hover:bg-blue-700 transition">Отправить сообщение</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-neutral text-white py-10">
+        <div class="container mx-auto px-6 text-center">
+            <p class="text-lg font-bold">TheOne ✨</p>
+            <div class="flex justify-center space-x-6 my-4">
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-gray-400 hover:text-white transition"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+            <p class="text-gray-500">&copy; 2025 Stellar Marketing. Все права защищены.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
